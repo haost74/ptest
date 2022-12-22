@@ -22,7 +22,7 @@ namespace word_m
             vt.push_back(Tree<T>::newTreeNew(data));
             root = &vt[0];
         }
-        ~wprd() {delete root;}
+        // ~wprd() {delete root;}
 
         // ------- get size ---------
         size_t getSize() { return vt.size(); }
@@ -35,12 +35,12 @@ namespace word_m
 
         void insertTreeNode(T data, int i = 0)
         {
-           vt.push_back(Tree<T>::newTreeNew(data)); 
-           if(i < vt.size())   
-           {    
-             Tree<T> * tr = &vt[vt.size() - 1];
-             vt[i].insertFriend(tr);
-           }
+            vt.push_back(Tree<T>::newTreeNew(data));
+            if (i < vt.size())
+            {
+                Tree<T> *tr = &vt[vt.size() - 1];
+                vt[i].insertFriend(tr);
+            }
         }
 
         size_t getCountFrends(int i)

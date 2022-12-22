@@ -10,7 +10,14 @@ set(PROJECT_VERSION_PATCH 0)
 
 set( CMAKE_STANDARD  20)
 
+
+set(CMAKE_THREAD_PREFER_PTHREAD TRUE)
+set(THREADS_PREFER_PTHREAD_FLAG TRUE)
+find_package(Threads REQUIRED)
+
 add_executable(app 
                    main.cpp 
                    src/nTree/Tree.hpp
                    src/WordTree.hpp)
+
+target_link_libraries(app Threads::Threads)
