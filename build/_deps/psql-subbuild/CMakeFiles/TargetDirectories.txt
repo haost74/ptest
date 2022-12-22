@@ -1,3 +1,0 @@
-C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/CMakeFiles/psql-populate.dir
-C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/CMakeFiles/ALL_BUILD.dir
-C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/CMakeFiles/ZERO_CHECK.dir

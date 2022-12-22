@@ -1,3 +1,0 @@
-repository='https://github.com/jtv/libpqxx.git'
-module=''
-tag='origin'
