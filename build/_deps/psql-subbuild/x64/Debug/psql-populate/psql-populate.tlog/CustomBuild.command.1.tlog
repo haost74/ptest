@@ -1,0 +1,162 @@
+^C:\USERS\HAOST\DESKTOP\PTEST\BUILD\_DEPS\PSQL-SUBBUILD\CMAKEFILES\4A8AE4F77C9C8058C2A2560C14E04240\PSQL-POPULATE-MKDIR.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/haost/Desktop/ptest/build/_deps/psql-src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/haost/Desktop/ptest/build/_deps/psql-build
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix/tmp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix/src/psql-populate-stamp/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix/src
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix/src/psql-populate-stamp
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix/src/psql-populate-stamp/Debug/psql-populate-mkdir
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HAOST\DESKTOP\PTEST\BUILD\_DEPS\PSQL-SUBBUILD\CMAKEFILES\4A8AE4F77C9C8058C2A2560C14E04240\PSQL-POPULATE-DOWNLOAD.RULE
+setlocal
+cd C:\Users\haost\Desktop\ptest\build\_deps
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix/tmp/psql-populate-gitclone.cmake
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix/src/psql-populate-stamp/Debug/psql-populate-download
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HAOST\DESKTOP\PTEST\BUILD\_DEPS\PSQL-SUBBUILD\CMAKEFILES\4A8AE4F77C9C8058C2A2560C14E04240\PSQL-POPULATE-UPDATE.RULE
+setlocal
+cd C:\Users\haost\Desktop\ptest\build\_deps\psql-src
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -P C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix/tmp/psql-populate-gitupdate.cmake
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HAOST\DESKTOP\PTEST\BUILD\_DEPS\PSQL-SUBBUILD\CMAKEFILES\4A8AE4F77C9C8058C2A2560C14E04240\PSQL-POPULATE-PATCH.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix/src/psql-populate-stamp/Debug/psql-populate-patch
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HAOST\DESKTOP\PTEST\BUILD\_DEPS\PSQL-SUBBUILD\CMAKEFILES\4A8AE4F77C9C8058C2A2560C14E04240\PSQL-POPULATE-CONFIGURE.RULE
+setlocal
+cd C:\Users\haost\Desktop\ptest\build\_deps\psql-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix/src/psql-populate-stamp/Debug/psql-populate-configure
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HAOST\DESKTOP\PTEST\BUILD\_DEPS\PSQL-SUBBUILD\CMAKEFILES\4A8AE4F77C9C8058C2A2560C14E04240\PSQL-POPULATE-BUILD.RULE
+setlocal
+cd C:\Users\haost\Desktop\ptest\build\_deps\psql-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix/src/psql-populate-stamp/Debug/psql-populate-build
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HAOST\DESKTOP\PTEST\BUILD\_DEPS\PSQL-SUBBUILD\CMAKEFILES\4A8AE4F77C9C8058C2A2560C14E04240\PSQL-POPULATE-INSTALL.RULE
+setlocal
+cd C:\Users\haost\Desktop\ptest\build\_deps\psql-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix/src/psql-populate-stamp/Debug/psql-populate-install
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HAOST\DESKTOP\PTEST\BUILD\_DEPS\PSQL-SUBBUILD\CMAKEFILES\4A8AE4F77C9C8058C2A2560C14E04240\PSQL-POPULATE-TEST.RULE
+setlocal
+cd C:\Users\haost\Desktop\ptest\build\_deps\psql-build
+if %errorlevel% neq 0 goto :cmEnd
+C:
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E echo_append
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix/src/psql-populate-stamp/Debug/psql-populate-test
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HAOST\DESKTOP\PTEST\BUILD\_DEPS\PSQL-SUBBUILD\CMAKEFILES\7949302A2A682E6BCC94CA4BB352A9ED\PSQL-POPULATE-COMPLETE.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -E make_directory C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/CMakeFiles/Debug
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/CMakeFiles/Debug/psql-populate-complete
+if %errorlevel% neq 0 goto :cmEnd
+"C:\Program Files\CMake\bin\cmake.exe" -E touch C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/psql-populate-prefix/src/psql-populate-stamp/Debug/psql-populate-done
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HAOST\DESKTOP\PTEST\BUILD\_DEPS\PSQL-SUBBUILD\CMAKEFILES\36F04B283538540D5F206E3C56B0411B\PSQL-POPULATE.RULE
+setlocal
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
+^C:\USERS\HAOST\DESKTOP\PTEST\BUILD\_DEPS\PSQL-SUBBUILD\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild -BC:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild --check-stamp-file C:/Users/haost/Desktop/ptest/build/_deps/psql-subbuild/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

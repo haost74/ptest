@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\haost\Desktop\ptest\build\_deps\psql-subbuild\CMakeFiles\36f04b283538540d5f206e3c56b0411b\generate.stamp.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{7E4AB233-E0EE-303B-9BD5-5D6F44E272FC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

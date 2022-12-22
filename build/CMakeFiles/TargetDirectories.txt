@@ -1,0 +1,3 @@
+C:/Users/haost/Desktop/ptest/build/CMakeFiles/app.dir
+C:/Users/haost/Desktop/ptest/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/haost/Desktop/ptest/build/CMakeFiles/ZERO_CHECK.dir
