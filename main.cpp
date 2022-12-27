@@ -1,6 +1,6 @@
 #include <iostream>
 #include "src/WordTree.hpp"
-#include "src/nTree/Tree.hpp"
+#include "src/nTree/Node.hpp"
 
 #include <chrono>
 #include <thread>
@@ -13,8 +13,8 @@ int main(int argc, char *argv[])
     std::cout << " size = " << d->getSize() << '\n';
     auto p = d->getRoot();
     std::cout << " get root = " << p << '\n';
-    d->insertTreeNode(50, 0);
-    d->insertTreeNode(77, 1);
+    d->insertNode(50, 0);
+    d->insertNode(77, 1);
     std::cout << " count frends = " << d->getCountFrends(0) << '\n';
     std::cout << " size = " << d->getSize() << '\n';
     delete d;

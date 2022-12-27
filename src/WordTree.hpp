@@ -2,7 +2,7 @@
 
 #include <iostream>
 #include <vector>
-#include "nTree/Tree.hpp"
+#include "nTree/Node.hpp"
 
 namespace word_m
 {
@@ -13,13 +13,13 @@ namespace word_m
     class wprd
     {
     private:
-        Tree<T> *root;
-        vector<Tree<T>> vt;
+        Node<T> *root;
+        vector<Node<T>> vt;
 
     public:
         wprd(T data)
         {
-            vt.push_back(Tree<T>::newTreeNew(data));
+            vt.push_back(Node<T>::newNodeNew(data));
             root = &vt[0];
         }
         // ~wprd() {delete root;}
@@ -33,12 +33,12 @@ namespace word_m
             return vt[0].getData();
         }
 
-        void insertTreeNode(T data, int i = 0)
+        void insertNode(T data, int i = 0)
         {
-            vt.push_back(Tree<T>::newTreeNew(data));
+            vt.push_back(Node<T>::newNodeNew(data));
             if (i < vt.size())
             {
-                Tree<T> *tr = &vt[vt.size() - 1];
+                Node<T> *tr = &vt[vt.size() - 1];
                 vt[i].insertFriend(tr);
             }
         }

@@ -6,29 +6,29 @@ using std::vector;
 namespace nTree
 {
     template <class T>
-    class Tree
+    class Node
     {
     private:
         T data;
-        Tree<T> *parent;
-        vector<Tree<T> *> listFrieds;
+        Node<T> *parent;
+        vector<Node<T> *> listFrieds;
 
     public:
-        Tree(T data) : data(data), parent(nullptr) {}
-        ~Tree()
+        Node(T data) : data(data), parent(nullptr) {}
+        ~Node()
         {
             // delete parent; for(auto d : listFrieds) delete d;
         }
 
     public:
-        static Tree<T> newTreeNew(T data)
+        static Node<T> newNodeNew(T data)
         {
-            return Tree<T>(data);
+            return Node<T>(data);
         }
 
         T getData() { return data; }
 
-        void insertFriend(Tree<T> *data)
+        void insertFriend(Node<T> *data)
         {
             listFrieds.push_back(data);
         }
