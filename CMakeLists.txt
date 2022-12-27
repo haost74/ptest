@@ -17,7 +17,7 @@ find_package(Threads REQUIRED)
 
 add_executable(app 
                    main.cpp 
-                   src/nTree/Tree.hpp
+                   src/nTree/Node.hpp
                    src/WordTree.hpp)
 
 target_link_libraries(app Threads::Threads)
